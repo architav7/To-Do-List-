@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-=&szum$z!%kl9v8uk7jvq%m3-a7)m8#(opgc%3ttvn0a%gi#ga'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'todo.architaverma.tech',
@@ -127,6 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 

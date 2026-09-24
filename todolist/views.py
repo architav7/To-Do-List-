@@ -21,6 +21,7 @@ def delete_task(request, task_id):
     retrieve_task = ToDoList.objects.get(id = task_id)
     retrieve_task.delete()
     return redirect("homepage")
+    
 
 def toggletodo(request, task_id):
     retrieve_todo = ToDoList.objects.get(id = task_id)
